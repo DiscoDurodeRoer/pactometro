@@ -1,0 +1,53 @@
+html, body {
+    height: 100%;
+}
+
+.political-party {
+    width: 22%;
+    float: left;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.political-party span {
+    display: block;
+}
+
+.center {
+    text-align: center;
+}
+
+.active{
+    background: #c2e2ff;
+}
+
+#total-seats{
+    color: green;
+}
+
+#barra {
+    height: 40px;
+    background: #e8e7e7;
+}
+
+#barra div{
+    height: 40px;
+    display: inline-block; 
+}
+
+#barra:before {
+    content: "";
+    border-left: 2px dashed #000;
+    display: block;
+    left: 50%;
+    height: 40px;
+    position: absolute;
+    width: 1px;
+    z-index: 3;
+}
+
+#info-pactos {
+    margin-bottom: 15px;
+}

@@ -1,0 +1,82 @@
+[
+    {
+        "name": "PSOE",
+        "seats": 120,
+        "color": "#e30613"
+    },
+    {
+        "name": "PP",
+        "seats": 88,
+        "color": "#0bb2f7"
+    },
+    {
+        "name": "VOX",
+        "seats": 52,
+        "color": "#68bd00"
+    },
+    {
+        "name": "Unidas Podemos",
+        "seats": 35,
+        "color": "#6a1f5f"
+    },
+    {
+        "name": "ERC",
+        "seats": 13,
+        "color": "#feb832"
+    },
+    {
+        "name": "Ciudadanos",
+        "seats": 10,
+        "color": "#eb6109"
+    },
+    {
+        "name": "JxCAT-JUNTS",
+        "seats": 8,
+        "color": "#ed5975"
+    },
+    {
+        "name": "EAJ-PNV",
+        "seats": 7,
+        "color": "#417505"
+    },
+    {
+        "name": "EH Bildu",
+        "seats": 5,
+        "color": "#b9ff71"
+    },
+    {
+        "name": "Más País",
+        "seats": 3,
+        "color": "#0fddc4"
+    },
+    {
+        "name": "CUP-PR",
+        "seats": 2,
+        "color": "#fff200"
+    },
+    {
+        "name": "CCa-PNC-NC",
+        "seats": 2,
+        "color": "#0fddc4"
+    },
+    {
+        "name": "NA+",
+        "seats": 2,
+        "color": "#af111e"
+    },
+    {
+        "name": "BNG",
+        "seats": 1,
+        "color": "#76b3dd"
+    },
+    {
+        "name": "PRC",
+        "seats": 1,
+        "color": "#b7bf10"
+    },
+    {
+        "name": "¡TERUEL EXISTE!",
+        "seats": 1,
+        "color": "#2c7553"
+    }
+]
