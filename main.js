@@ -1,6 +1,7 @@
 
 var totalSeats = 0;
 
+var classDiv = "political-party rounded mb-1 mr-1 "
 
 function cargarJSON() {
 
@@ -16,15 +17,10 @@ function cargarJSON() {
         if (this.readyState == 4 && this.status == 200) {
 
             // Parseo la informacion y la muestro
-            console.log("Recibida la informacion del fichero");
             let datos = JSON.parse(this.responseText);
-            console.log(datos);
             showPoliticalParties(datos);
         }
     }
-
-    console.log("Se envia la peticion");
-
     // Abro la llamada o peticion
     llamada.open("GET", url, true);
     // lanzo la peticion
@@ -44,19 +40,21 @@ function showPoliticalParties(politicalParties) {
 
 
             let divExist = document.getElementById(polPart.name);
+            div.setAttribute("class", classDiv);
+            div.setAttribute("style", "border-left: 10px solid " + polPart.color)
 
             if (divExist) {
 
                 totalSeats -= polPart.seats;
 
-                div.setAttribute("class", "political-party");
+                div.setAttribute("class", classDiv);
 
                 divExist.remove();
             } else {
                 let divPercent = document.createElement("div");
                 divPercent.setAttribute("id", polPart.name);
 
-                div.setAttribute("class", "political-party active");
+                div.setAttribute("class", classDiv + "active");
 
                 divPercent.setAttribute("style", "width: " + ((polPart.seats * 100) / 350) + "%;background-color: " + polPart.color);
 
@@ -70,15 +68,16 @@ function showPoliticalParties(politicalParties) {
 
         });
 
-        div.setAttribute("class", "political-party");
-        div.setAttribute("style", "border-left: 10px solid " + polPart.color)
-        let name = document.createElement("span");
+
+        let name = document.createElement("h4");
+        name.setAttribute("class", " p-1 text-center");
         let nameText = document.createTextNode(polPart.name);
 
         name.appendChild(nameText);
 
         let seats = document.createElement("span");
-        let seatsText = document.createTextNode(polPart.seats);
+        seats.setAttribute("class", " p-1 text-center");
+        let seatsText = document.createTextNode(polPart.seats + (polPart.seats == 1 ? "escaño" : " escaños"));
 
         seats.appendChild(seatsText);
 

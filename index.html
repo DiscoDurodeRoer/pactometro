@@ -1,28 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script src="main.js"></script>
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="includes/bootstrap-4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
 
-    <div id="info-pactos">
-        <p class="center">Mayoría absoluta: (176)</p>
-        <p>Total escaños: <span id="total-seats">0</span></p>
-        <div id="barra" class="percent">
+    <div class="container mt-4 mb-4 rounded bg-white border">
+        <div class="row">
+            <div class="col-12">
 
+                <div class="row">
+                    <div class="col-12 mb-3">
+
+                        <div class="row">
+                            <div class="col-12 text-center mt-4 mb-3">
+                                <h3>Mayoría absoluta: (176)</h3>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <h4>Total escaños: <span id="total-seats">0</span></h4>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div id="barra" class="percent"></div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="d-flex flex-row flex-wrap mb-4"  id="political-parties">
+                    <!-- <div class="flex-column"> -->
+                        <!-- <div class="row no-gutters"> -->
+                            <!-- Se carga desde JS -->
+                        <!-- </div> -->
+                    <!-- </div> -->
+                </div>
+
+            </div>
         </div>
     </div>
 
-    <div id="political-parties">
-        <!-- Se carga desde JS -->
-    </div>
+
+
 
 
 
 </body>
+
 </html>
