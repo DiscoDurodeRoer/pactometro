@@ -1,4 +1,10 @@
 # Pactometro
+
+Videos:
+
+- https://youtu.be/8I5J57CAV2A
+- https://youtu.be/cvPIvx94FME
+
 Si has visto alguna vez "Al Rojo Vivo" con Ferreras, te sonará el programa, pues básicamente es la idea del programa.
 
 En un JSON tenemos la información de cada partidos y sus escaños. Esto hace que nos sirva para diferentes elecciones.
